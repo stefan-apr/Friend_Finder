@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Account Creation</title>
+
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="jumbotron">
+      <h1 class="text-center">
+        <span class="fa fa-fire"></span>Friend Finder</h1>
+      <hr>
+      <h2 class="text-center">Create Your Profile</h2>
+      <br>
+      <div class="text-center">
+        <a href="/">
+          <button class="btn btn-lg btn-default">
+            <span class="fa fa-home"></span>
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <!-- Profile Creation Page -->
+        <div class="card">
+          <div class="card-header">
+            User Profile
+          </div>
+          <div class="card-body">
+            <div id="chosen-friend">
+
+            </div>
+            <div id="error">
+
+            </div>
+            <form role="form">
+              <div class="form-group-1">
+                <label for="friend-name">Name</label>
+                <input type="text" class="form-control" id="friend-name">
+              </div>
+              <div class="form-group-1">
+                <label for="friend-phone">Phone Number</label>
+                <input type="text" class="form-control" id="friend-phone">
+              </div>
+              <div class="form-group-1">
+                <label for="friend-email">Email</label>
+                <input type="text" class="form-control" id="friend-email">
+              </div>
+              <div class="form-group-1">
+                <label for="friend-unique-id">Unique ID</label>
+                <input type="text" class="form-control" id="friend-unique-id">
+              </div>
+              <div class="form-group-1">
+                <label for="friend-photo-link">Photo Link</label>
+                <input type="" class="form-control" id="friend-photo-link">
+              </div>
+              <div class="form-group-2">
+                  <label for="friend-q1">Your mind is always buzzing with unexplored ideas and plans.</label>
+                  <select name="q1" class="form-control" id="friend-q1">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+              </div>
+              <div class="form-group-2">
+                  <label for="friend-q2">Generally speaking, you rely more on your experience than your imagination.</label>
+                  <select name="q2" class="form-control" id="friend-q2">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+              </div><div class="form-group-2">
+                  <label for="friend-q3">You find it easy to stay relaxed and focused even when there is some pressure.</label>
+                  <select name="q3" class="form-control" id="friend-q3">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+              </div><div class="form-group-2">
+                  <label for="friend-q4">You rarely do something just out of sheer curiosity.</label>
+                  <select name="q4" class="form-control" id="friend-q4">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+              </div><div class="form-group-2">
+                  <label for="friend-q5">People can rarely upset you.</label>
+                  <select name="q5" class="form-control" id="friend-q5">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+              </div><div class="form-group-2">
+                  <label for="friend-q6">It is often difficult for you to relate to other people’s feelings.</label>
+                  <select name="q6" class="form-control" id="friend-q6">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+              </div><div class="form-group-2">
+                  <label for="friend-q7">In a discussion, truth should be more important than people’s sensitivities.</label>
+                  <select name="q7" class="form-control" id="friend-q7">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+              </div><div class="form-group-2">
+                  <label for="friend-q8">You rarely get carried away by fantasies and ideas.</label>
+                  <select name="q8" class="form-control" id="friend-q8">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+              </div><div class="form-group-2">
+                  <label for="friend-q9">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</label>
+                  <select name="q9" class="form-control" id="friend-q9">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+              </div><div class="form-group-2">
+                  <label for="friend-q10">You feel more energetic after spending time with a group of people.</label>
+                  <select name="q10" class="form-control" id="friend-q10">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+              </div>
+              <button type="submit" class="btn btn-primary submit" id="data-submit">Submit</button>
+              <button type="submit" class="btn btn-primary submit" id="questionairre-submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p>
+          <a href="/api/friends">API Friend Link</a> | <a href="#" id="clear">Clear Friends (Debug Purposes)</a> | <a href="https://github.com/stefan-apr/Friend_Finder">GitHub Repo</a>
+        </p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
+
+<script type="text/javascript">
+  
+  $(".form-group-2").css("display", "none");
+  $("#questionairre-submit").css("display", "none");
+
+  $("#data-submit").on("click", function(event) {
+    event.preventDefault();
+    
+    $(".form-group-2").css("display", "block");
+    $(".form-group-1").css("display", "none");
+    $("#questionairre-submit").css("display", "block");
+    $("#data-submit").css("display", "none");
+  });
+
+  $("#questionairre-submit").on("click", function(event) {
+    event.preventDefault();
+
+    $("#questionairre-submit").css("display", "none");
+    $("form").css("display", "none");
+    $(".card-header").text("Your Best Match!");
+    $("h2").text("View Your Matches");
+
+    // Grab the form elements
+    var newFriend = {
+      friendName: $("#friend-name").val().trim(),
+      friendNumber: $("#friend-phone").val().trim(),
+      friendEmail: $("#friend-email").val().trim(),
+      friendID: $("#friend-unique-id").val().trim(),
+      friendPhoto: $("#friend-photo-link").val().trim(),
+      friendScores:[
+        $("#friend-q1").val(),
+        $("#friend-q2").val(),
+        $("#friend-q3").val(),
+        $("#friend-q4").val(),
+        $("#friend-q5").val(),
+        $("#friend-q6").val(),
+        $("#friend-q7").val(),
+        $("#friend-q8").val(),
+        $("#friend-q9").val(),
+        $("#friend-q10").val(),
+      ]
+    };
+
+      // The AJAX function uses the URL of our API to GET the data associated with it
+      $.ajax({ url: "/api/friends", method: "GET" })
+        .then(function(friendData) {
+
+          // Loop through the Friends and pick the best match
+          var yourFriendScores = newFriend.friendScores;
+          var bestFriend = 0;
+          var bestFriendSum = 10000;
+          var repeatFlag = false;
+          for (var i = 0; i < friendData.length; i++) {
+            if(friendData[i].friendName !== newFriend.friendName || friendData[i].friendEmail !== newFriend.friendEmail || friendData[i].friendID !== newFriend.friendID || friendData[i].friendNumber !== newFriend.friendNumber) {
+              var curFriendScores = friendData[i].friendScores;
+              var runningSum = 0;
+              for(var j = 0; j < curFriendScores.length; j++) {
+                runningSum = runningSum + parseInt(Math.abs(parseInt(curFriendScores[j]) - parseInt(yourFriendScores[j])));
+              }
+              if(runningSum < bestFriendSum) {
+                bestFriend = i;
+                bestFriendSum = runningSum;
+              }
+            } else {
+              repeatFlag = true;
+              break;
+            }
+          }
+          if(!repeatFlag) {
+            $.post("/api/friends", newFriend);
+            console.log("The algorithm chose this friend:");
+            console.log(bestFriend);
+            console.log(friendData[bestFriend]);
+            console.log("Point differential:");
+            console.log(bestFriendSum);
+            var chosenFriend = friendData[bestFriend];
+            $("#chosen-friend").append("<div><h3>Name:</h3><h5>" + chosenFriend.friendName + "</h5></div><br>");
+            $("#chosen-friend").append("<div><h3>ID:<h3><h5>" + chosenFriend.friendID + "</h5></div><br>");
+            $("#chosen-friend").append("<div><img src='" + chosenFriend.friendPhoto + "' alt='Photo Link Error' id='match-photo'/></div>");
+            $("#match-photo").css("height", "100px");
+            $("#match-photo").css("width", "100px");
+          } else {
+            console.log("The data pieces you've provided are already in use by a different account.");
+          }
+      });
+  });
+
+
+  // This function resets all of the friend data.
+  function clear() {
+    alert("Clearing...");
+
+    // Clear the friends on the server
+    $.ajax({ url: "/api/clear", method: "POST" }).then(function() {
+    });
+
+    var defaultFriend = {
+      friendName: "Stefan",
+      friendEmail: "stefan@example.com",
+      friendID: "stefan33",
+      friendNumber: "000-000-0000",
+      friendPhoto: "https://avatars3.githubusercontent.com/u/32446183?s=400&v=4",
+      friendScores:[
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    };
+    $.post("/api/friends", defaultFriend);
+
+  }
+
+  $("#clear").on("click", clear);
+
+</script>
